@@ -1,16 +1,152 @@
-# React + Vite
+# Barcode Label Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React-based barcode label generator with live preview and high-quality PNG/JPEG export functionality.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Generate barcode labels instantly
+- Live preview updates
+- Export as PNG or JPEG
+- High-quality image download
+- Barcode generation using CODE128
+- Responsive UI
+- Modern Tailwind CSS design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Tailwind CSS
+- JsBarcode
+- html-to-image
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/barcode-generator.git
+```
+
+Go to project folder:
+
+```bash
+cd barcode-generator
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## Dependencies
+
+Install required packages:
+
+```bash
+npm install jsbarcode html-to-image
+```
+
+---
+
+## Project Structure
+
+```bash
+src/
+ ├── components/
+ │    └── BarcodeLabel.jsx
+ ├── App.jsx
+ ├── main.jsx
+ └── index.css
+```
+
+---
+
+## Features Overview
+
+### Barcode Generation
+
+Uses `JsBarcode` library to generate dynamic CODE128 barcodes.
+
+### Image Export
+
+Uses `html-to-image` library to export the label card as:
+
+- PNG
+- JPEG
+
+### High Quality Export
+
+```js
+pixelRatio: 4
+```
+
+provides sharp downloadable images.
+
+---
+
+## Usage
+
+1. Enter brand name
+2. Enter product name
+3. Select size
+4. Enter colour
+5. Enter price
+6. Enter SKU code
+7. Select export format
+8. Click download
+
+---
+
+## Screenshot
+
+Add your project screenshot here.
+
+```md
+![App Screenshot](./screenshot.png)
+```
+
+---
+
+## Example SKU
+
+```txt
+ANAR-M-BLK
+```
+
+---
+
+## Future Improvements
+
+- PDF export
+- Print functionality
+- QR code support
+- Custom label sizes
+- Dark mode
+- Database integration
+
+---
+
+## Author
+
+Sushant
+
+---
+
+## License
+
+MIT License
