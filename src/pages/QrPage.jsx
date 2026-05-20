@@ -6,7 +6,7 @@ const FORMATS = ["png", "jpeg"];
 const SIZES = ["S", "M", "L", "XL"];
 
 export default function BarcodeLabel() {
-  const [brandName, setBrandName] = useState("Xyz Brand");
+  const [brandName, setBrandName] = useState("Sushant World");
   const [productName, setProductName] = useState("Product Name");
   const [size, setSize] = useState("M");
   const [colour, setColour] = useState("Black");
@@ -94,7 +94,7 @@ export default function BarcodeLabel() {
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-green-50">
-      <div className="mx-auto mb-20 w-full max-w-[840px] overflow-hidden rounded-[20px] bg-white shadow-[0_20px_60px_rgba(99,102,241,0.10),0_4px_16px_rgba(0,0,0,0.06)]">
+      <div className="mx-auto mb-20 w-full max-w-[840px] overflow-hidden md:rounded-[20px] bg-white shadow-[0_20px_60px_rgba(99,102,241,0.10),0_4px_16px_rgba(0,0,0,0.06)]">
 
         {/* Header */}
         <div className="flex items-center gap-3 bg-gradient-to-br from-indigo-500 to-violet-500 px-7 py-5">
