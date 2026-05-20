@@ -246,34 +246,10 @@ export default function BarcodeLabel() {
           </div>
 
           {/* Preview */}
-          <div className="flex flex-1 flex-col gap-4 bg-slate-50 p-6">
-
-            <button
-              type="button"
-              onClick={() =>
-                setPreviewOpen((prev) => !prev)
-              }
-              className="flex items-center justify-between rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-indigo-500 md:hidden"
-            >
-              <span>
-                👁 {previewOpen ? "Hide" : "Show"} Preview
-              </span>
-
-              <span
-                className={`transition-transform ${
-                  previewOpen ? "rotate-180" : ""
-                }`}
-              >
-                ▾
-              </span>
-            </button>
+          <div className="flex flex-1 flex-col p-4 bg-slate-50 md:px-4">
 
             <div
-              className={`${
-                previewOpen
-                  ? "flex"
-                  : "hidden"
-              } flex-col gap-4 md:flex`}
+              className="flex flex-col gap-4"
             >
 
               <p className="text-[11px] font-semibold uppercase tracking-[0.08em] text-slate-400">
