@@ -11,8 +11,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<h1 className='text-3xl font-bold underline'>Home Page</h1>} />
-        <Route path='/qr' element={<QrPage />} />
+        <Route path='/' element={<QrPage />} />
       </Routes>
     </>
 
